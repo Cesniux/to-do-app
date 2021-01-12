@@ -19,8 +19,9 @@
 
 .input-text {
   position: relative;
-  top: 21px;
+  top: 22px;
   left: 24px;
+  width: 100px;
 }
 
 .add {
@@ -33,5 +34,13 @@
   background-color: #1F88B7;
   border-radius: 20px;
   text-align: center;
+}
+
+.add span {
+  position: relative;
+  top: 20px;
+  font-weight: bold;
+  color: #FFFFFF; 
+  font-family: Roboto;
 }
 
