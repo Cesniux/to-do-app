@@ -1,3 +1,8 @@
+* {
+  font-family: Roboto;
+  color: #2E2E2E;
+}
+
 body {
   background-color: #E8E8E8;
 }
@@ -47,11 +52,7 @@ body {
   position: relative;
   top: 20px;
   font-weight: bold;
-  color: #FFFFFF; 
-}
-
-span {
-  font-family: Roboto;
+  color: #FFFFFF;
 }
 
 .bottom {
@@ -60,7 +61,6 @@ span {
   top: 15px;
   display: grid;
   grid-template-rows: repeat(3, 63px);
-
   width: 600px;
   height: 720px;
   box-shadow: 0px 3px 6px #00000029;
@@ -75,6 +75,8 @@ span {
 
 .box {
   position: relative;
+  padding-left: 42px;
+  padding-top: 20px;
 }
 .box::after {
     content: "";
