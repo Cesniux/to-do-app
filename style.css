@@ -1,5 +1,11 @@
+body {
+  background-color: #E8E8E8;
+}
+
 .top {
   margin: auto;
+  position: relative;
+  top: 15px;
   width: 600px;
   height: 110px;
   background-color: #28A7E0;
@@ -46,4 +52,34 @@
 
 span {
   font-family: Roboto;
+}
+
+.bottom {
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  display: grid;
+  grid-template-rows: repeat(3, 63px);
+
+  width: 600px;
+  height: 720px;
+  box-shadow: 0px 3px 6px #00000029;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.a {
+  grid-area: 1 / 1 / 2 / 1;
+  background-color: #28A7E01A;
+}
+
+.box {
+
+}
+
+#bottom-border {
+  border-bottom: 5px solid #000000;
+  position: absolute;
+  left: 10%;
+  right: 10%;
 }
