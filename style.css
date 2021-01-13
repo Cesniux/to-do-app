@@ -72,3 +72,16 @@ span {
   grid-area: 1 / 1 / 2 / 1;
   background-color: #28A7E01A;
 }
+
+.box {
+  position: relative;
+}
+.box::after {
+    content: "";
+    background: #E8E8E8;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    height: 1px;
+    width: 551px;
+}
