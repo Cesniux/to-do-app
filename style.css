@@ -73,10 +73,13 @@ body {
   background-color: #28A7E01A;
 }
 
+/*Item*/
 .box {
   position: relative;
-  padding-left: 42px;
-  padding-top: 20px;
+  padding-left: 31px;
+  padding-top: 13px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 .box::after {
     content: "";
@@ -86,4 +89,24 @@ body {
     left: 25px;
     height: 1px;
     width: 551px;
+}
+
+.box input {
+  position: relative;
+  opacity: 0%;
+  cursor: pointer;
+  height: 0px;
+  width: 0px;
+}
+
+.checkmark {
+  display: inline-block;
+  margin-right: 17px;
+  position: relative;
+  height: 22px;
+  width: 22px;
+  top: 7px;
+  left: 0;
+  border-radius: 100%;
+  border: 1px solid #2E2E2E;
 }
