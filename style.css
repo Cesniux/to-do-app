@@ -72,14 +72,3 @@ span {
   grid-area: 1 / 1 / 2 / 1;
   background-color: #28A7E01A;
 }
-
-.box {
-
-}
-
-#bottom-border {
-  border-bottom: 5px solid #000000;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-}
