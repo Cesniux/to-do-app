@@ -67,12 +67,16 @@ body {
   background-color: #FFFFFF;
   border-radius: 0px 0px 20px 20px;
 }
-
+/* Highlighting the selected list item box */
 .a {
   grid-area: 1 / 1 / 2 / 1;
   background-color: #28A7E01A;
 }
 
+/* Marking finished job with a line-through */
+.c {
+  text-decoration-line: line-through;
+}
 /*Item*/
 .box {
   position: relative;
@@ -94,7 +98,7 @@ body {
     height: 1px;
     width: 551px;
 }
-
+/* Hiding the default input box */
 .box input {
   position: absolute;
   opacity: 0%;
@@ -103,6 +107,7 @@ body {
   width: 0;
 }
 
+/* Creating a new checkmark box */
 .checkmark {
   display: inline-block;
   margin-right: 12px;
@@ -115,11 +120,11 @@ body {
   border: 1px solid #2E2E2E;
 }
 
-/* On mouse-over, add light blue background color */
+/* (To save code for other task maybe). On mouse-over, add light blue background color */
 /*.box:hover input ~ .checkmark {
   background-color: lightseagreen;
 }
-
+*/
 /* Checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
@@ -142,4 +147,14 @@ body {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* The delete sign box 'x' */
+.xbox {
+  display: inline-block;
+  position: absolute;
+  margin-right: auto;
+  height: 40px;
+  width: 40px;
+  background-color: yellow;
 }
