@@ -153,8 +153,27 @@ body {
 .xbox {
   display: inline-block;
   position: absolute;
-  margin-right: auto;
-  height: 40px;
-  width: 40px;
-  background-color: yellow;
+  left: 550px;
+  top: 17px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: 0;
+  height: 29px;
+  width: 29px;
+}
+
+/* A 'x' sign in the box */
+.xbox::after {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\d7";
+  color: #e03e28b2;
+  font-size: 40px;
+  line-height: 28px;
+  font-weight: 400;
 }
