@@ -80,6 +80,10 @@ body {
   padding-top: 13px;
   user-select: none;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 .box::after {
     content: "";
@@ -92,21 +96,50 @@ body {
 }
 
 .box input {
-  position: relative;
+  position: absolute;
   opacity: 0%;
   cursor: pointer;
-  height: 0px;
-  width: 0px;
+  height: 0;
+  width: 0;
 }
 
 .checkmark {
   display: inline-block;
-  margin-right: 17px;
+  margin-right: 12px;
   position: relative;
-  height: 22px;
-  width: 22px;
-  top: 7px;
+  height: 21px;
+  width: 21px;
+  top: 6px;
   left: 0;
   border-radius: 100%;
   border: 1px solid #2E2E2E;
+}
+
+/* On mouse-over, add light blue background color */
+/*.box:hover input ~ .checkmark {
+  background-color: lightseagreen;
+}
+
+/* Checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.box input:checked ~ .checkmark:after {
+  display: inline-block;
+}
+
+/* Style the checkmark/indicator */
+.box .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 7px;
+  border: solid #2E2E2E;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
