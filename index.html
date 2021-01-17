@@ -1,48 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <!--Elements in the top part of the app-->
+      <header class="header">
+        <input
+          id="textInput"
+          class="input-text"
+          type="text"
+          placeholder="Add item"
+        />
 
-</head>
-<body>
+        <button id="addButton" class="add">Add</button>
+      </header>
 
-  <!--Elements in the top part of the app-->
-<header class="top">
-  <div class="input-window">
-    <div class="input-text"><span>Item name</span>
+      <!-- Elements of the list-->
+      <div class="list" id="list">
+        <!-- Our list goes here -->
+        <!-- <label class="box a">
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+          Item name
+          <div class="xbox"></div>
+        </label> -->
+      </div>
     </div>
-  </div>
-
-    <div class="add"><span>Add</span></div>
-</header>
-
-
-<!-- Elements of the list-->
-<div class="bottom">
-
-  <label class="box a">
-    <input type="checkbox">
-    <span class="checkmark"></span>
-    Item name
-    <div class="xbox"></div>
-  </label>
-
-  <label class="box b">
-    <input type="checkbox">
-    <span class="checkmark"></span>
-    Item name
-  </label>
-
-  <label class="box c">
-    <input type="checkbox">
-    <span class="checkmark"></span>
-    Item name
-  </label>
-
-</div>
-</div>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
