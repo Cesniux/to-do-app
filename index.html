@@ -10,32 +10,26 @@
     <div class="app">
       <!--Elements in the top part of the app-->
       <header class="header">
-      <input class="input-text" type="text" placeholder="Add item">
-        <button class="add">Add</button>
+        <input 
+        id="textInput"
+        class="input-text"
+        type="text"
+        placeholder="Add item"
+        />
+        
+        <button id="addButton" class="add">Add</button>
       </header>
 
-      <!-- Elements of the list-->
-      <div class="bottom">
-        <label class="box a">
+
+        <div class="list" id="list"></div>
+        <!-- Our list goes here -->
+        <!-- <label class="box a">
           <input type="checkbox" />
           <span class="checkmark"></span>
-          Item name
+          <span id="Item name
           <div class="xbox"></div>
-        </label>
-
-        <label class="box b">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-          Item name
-        </label>
-
-        <label class="box c">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-          Item name
-        </label>
-
-      </div>
+        </label> -->
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
