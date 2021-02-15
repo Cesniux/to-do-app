@@ -56,7 +56,7 @@ body {
 }
 
 /*Styling the list grid */
-.bottom {
+.list {
   flex-grow: 1;
   position: relative;
   display: grid;
