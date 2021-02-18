@@ -10,8 +10,21 @@ addButton.addEventListener('click', () => {
   console.log(LIST_ITEMS);
 });
 
-const listItem = () => {}
-const renderList = () => {
-  list.innerHTML = '...';
-}
 
+addButton.addEventListener('click', () => {
+  const listItem = () => {
+    const itemBlock = '<label class="box a">' + 
+      '<input type="checkbox" />' + 
+      '<span class="checkmark"></span>' + 
+      LIST_ITEMS[LIST_ITEMS.length - 1] +
+      '<div class="xbox"></div>' + 
+      '</label>';
+    return itemBlock;
+  };
+
+  const renderList = () => {
+    list.innerHTML = listItem();
+  };
+
+  renderList();
+});
